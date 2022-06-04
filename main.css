@@ -1,0 +1,189 @@
+.hero {
+    height: 800px;
+    background-image: url("images/banner.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: top right;
+}
+
+h1 {
+    margin: 40px 0px 10px 0px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 48px;
+    width: 554px;
+}
+
+.container {
+    width: 1700px;
+    margin: 0 auto;
+}
+
+.divider {
+    display: block;
+    margin: 0px 31px 0px 31px;
+    height: 25px;
+    width: 1px;
+    background: #979797;
+    flex: 0 0 1px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-list {
+    display: flex;
+    height: 82px;
+    color: #a80bbd;
+    list-style: none;
+    padding: 10px 0;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
+.menu-link {
+    position: relative;
+    text-decoration: none;
+    margin: 0px 0px 0px 20px;
+
+}
+
+
+.menu-link.active::after {
+    content: "";
+    margin-left: -4px;
+    margin-top: 15px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-radius: 50%;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #a80bbd;
+}
+
+.menu-profile {
+    display: flex;
+    height: 82px;
+    padding: 10px 0;
+    list-style: none;
+    height: 82px;
+    padding: 10px 0;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+.detail {
+    background: #a80bbd;
+    border-radius: 16px;
+    height: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-size: 16px !important;
+    padding: 5px 12px;
+}
+
+.menu-link:hover {
+    color: rgb(245, 8, 8);
+}
+
+.subtitle {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    opacity: 0.54;
+    width: 554px;
+}
+
+.market {
+    margin: 35px 0px;
+}
+
+.market-apps {
+    padding: 0px 10px;
+}
+
+.bot {
+    display: flex;
+
+}
+
+.bot-posts {
+    display: flex;
+    max-width: 100%;
+}
+
+.bot-color {
+    color: #00BCD4;
+}
+
+.bot-post {
+    font-size: 28px;
+    position: relative;
+    padding: 0px 50px 0px 50px;
+    /* баг с шириной контейнера, родителю задавать  max-width: 100%, потомку min-width: 0; сложно при использовании свойства text-overflow */
+    min-width: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.bot-post:last-child {
+    border-right: none;
+}
+
+.bot-post-title {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.bot-post-text {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.text-overflow {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+.bot-active .bot-post-title::before {
+    content: "";
+    border-radius: 50%;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #00BCD4;
+}
+
+.bot-active .bot-post-title {
+    color: #00BCD4;
+}
