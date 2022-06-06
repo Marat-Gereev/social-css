@@ -1,10 +1,18 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 .hero {
-    height: 800px;
+    height: 700px;
     background-image: url("images/banner.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: top right;
 }
+
+
 
 h1 {
     margin: 40px 0px 10px 0px;
@@ -15,7 +23,7 @@ h1 {
 }
 
 .container {
-    width: 1700px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -66,8 +74,8 @@ h1 {
     left: 50%;
     border-radius: 50%;
     display: block;
-    width: 8px;
-    height: 8px;
+    width: 20px;
+    height: 20px;
     background: #a80bbd;
 }
 
@@ -179,11 +187,122 @@ h1 {
     content: "";
     border-radius: 50%;
     display: inline-block;
-    width: 8px;
-    height: 8px;
+    width: 20px;
+    height: 20px;
     background: #00BCD4;
+    margin-right: 8px;
+    margin-bottom: 1px;
 }
 
 .bot-active .bot-post-title {
     color: #00BCD4;
+}
+
+/* ///vtoroy block// */
+
+.jane-post {}
+
+h2 {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    justify-content: center;
+    display: flex;
+}
+
+.features {
+    position: relative;
+
+}
+
+.features-item::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    border-radius: 17px;
+    display: block;
+    width: 81px;
+    height: 12px;
+    background: linear-gradient(169.02deg, #B2EBF2 -58.33%, #D1C4E9 60.57%);
+}
+
+.jane-post {
+    display: flex;
+
+}
+
+.jane-titles {
+    margin: 0 0 0 94px;
+}
+
+.jane-title {
+    margin: 150px 0 0 0px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    /* position: relative;
+    padding-left: 33.5px; */
+}
+
+.jane-title::before {
+    content: "";
+    border-radius: 50%;
+    display: inline-block;
+    width: 17.5px;
+    height: 17.5px;
+    background: #00BCD4;
+    margin-right: 16.5px;
+    margin-bottom: 1px;
+    /* position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -7px; */
+}
+
+.jane-item {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    width: 595px;
+    margin: 24px 0 0 0;
+}
+
+/* // trety block// */
+
+.vivamus {
+    margin: 81px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+
+.vivamus-post {
+    text-align: end;
+    margin-left: 265px;
+}
+
+.vivamus-title {
+    margin: 150px 0 0 0;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.vivamus-title::after {
+    content: "";
+    border-radius: 50%;
+    display: inline-block;
+    width: 17.5px;
+    height: 17.5px;
+    background: #00BCD4;
+    margin-left: 16.5px;
+    margin-bottom: 1px;
+}
+
+.vivamus-img {
+    margin-right: 350px;
 }
