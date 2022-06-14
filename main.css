@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 .hero {
     height: 700px;
     background-image: url("images/banner.png");
@@ -74,8 +78,8 @@ h1 {
     left: 50%;
     border-radius: 50%;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 9px;
+    height: 9px;
     background: #a80bbd;
 }
 
@@ -113,6 +117,7 @@ h1 {
 
 .menu-link:hover {
     color: rgb(245, 8, 8);
+    transition: 0.4s;
 }
 
 .subtitle {
@@ -270,7 +275,7 @@ h2 {
     margin: 24px 0 0 0;
 }
 
-/* // trety block// */
+/* // третий блок// */
 
 .vivamus {
     margin: 81px 0 0 0;
@@ -305,4 +310,329 @@ h2 {
 
 .vivamus-img {
     margin-right: 350px;
+}
+
+
+/* //четвертый  блок// */
+
+.artworks {
+    background-image: url(images/mask.png);
+    background-size: 100%;
+    padding: 82px 0 0 0;
+}
+
+.artworks-posts {
+    position: absolute;
+}
+
+.artwork-title {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.artwork-post {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.artwork-img {
+    text-align: center;
+}
+
+.artworks-bot {
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+}
+
+.followers {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    width: 368px;
+}
+
+.follower {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #006064;
+    width: 250px;
+    margin: 0 0 0 70px;
+}
+
+.follower-bot {
+    clear: both;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.followers:last-child {
+    border-right: none;
+}
+
+/* пятый блок */
+
+.discover {
+    background-color: #f0fbfc;
+    background-size: 100%;
+    margin-bottom: 200px;
+}
+
+
+.discover-title {
+    position: relative;
+    margin: 0;
+    background-color: #f0fbfc;
+    padding: 120px 0 0 0;
+}
+
+
+
+.discover-title::after {
+    content: "";
+    position: absolute;
+    top: 190px;
+    border-radius: 17px;
+    display: block;
+    width: 81px;
+    height: 12px;
+    background: linear-gradient(169.02deg, #B2EBF2 -58.33%, #D1C4E9 60.57%);
+}
+
+.discover-img {
+    width: 100%;
+    position: relative;
+    top: 136px;
+}
+
+
+
+/* //6-7 блоки// */
+.stories {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* //8 блок// */
+
+.whats-updates {
+    background-image: url(images/whats-update.png);
+    background-repeat: no-repeat;
+    background-position: bottom -1000px right 0px;
+    background-size: 100%;
+}
+
+.whats-post {
+    padding: 0 0 80px 0;
+    margin: 0 auto;
+    width: 701px;
+
+}
+
+.whats-update {
+    display: block;
+    text-align: center;
+}
+
+.whats-update::after {
+    content: "";
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    border-radius: 17px;
+    display: block;
+    width: 81px;
+    height: 12px;
+    background: linear-gradient(169.02deg, #B2EBF2 -58.33%, #D1C4E9 60.57%);
+}
+
+.rectagle-news {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.rectagle {
+    background-color: #fff;
+    border-radius: 35px;
+    flex: 0 0 41%;
+
+}
+
+.rectagle img {
+    position: relative;
+    top: -50px;
+}
+
+
+.rectagle-title {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.54);
+    /* margin-bottom: 10px; */
+}
+
+.read-rectagle {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #311B92;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.rectagle-content {
+    margin: -80px 0 0 20px;
+}
+
+.news {
+    flex: 0 0 50%;
+}
+
+.news-items {
+    display: flex;
+}
+
+
+.news-post {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 16px 0;
+}
+
+.read-news {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #9C27B0;
+}
+
+.news-item {
+
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+
+.news-item+.news-item {
+    margin-top: 40px;
+}
+
+.rectagle-title-news {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.54);
+
+
+}
+
+.news-content {
+    margin-left: -55px;
+    padding-right: 20px;
+
+}
+
+.news-item img {
+    position: relative;
+    left: -50px;
+    width: 164px;
+}
+
+
+/* 9 блок */
+
+.footer {
+    background-color: rgb(246 243 251);
+    padding-top: 150px;
+    background-image: url(images/decoration.png);
+    background-repeat: no-repeat;
+    background-position: bottom -18px right -98px;
+    background-size: 100%;
+}
+
+h3 {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.54);
+    margin-top: 0;
+}
+
+.footer-market {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    width: 245px;
+    padding-top: 145px;
+}
+
+.footer-skyrev {
+    margin-top: 38px;
+}
+
+.footer-subtitle {
+    margin: 27px 0 27px 0;
+}
+
+.footer-market img {
+    margin: 15px;
+}
+
+.footer-text {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.fotter-bot-title {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 18px;
+    color: #673AB7;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links div {
+    width: 30px;
+    margin: 9px;
+}
+
+.footer-links:last-child {
+    width: 200px;
+}
+
+.footer-company {
+    margin-left: 25px;
 }
