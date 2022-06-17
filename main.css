@@ -5,11 +5,14 @@
 }
 
 body {
+    /* добавить font-family  */
     margin: 0;
 }
 
 .hero {
     height: 700px;
+    /* можно обьединить эти три свойства в одно */
+    /* background: url("images/banner.png") top right no-repeat; */
     background-image: url("images/banner.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -19,10 +22,13 @@ body {
 
 
 h1 {
+    /* тут можно сократить написание margin */
+    /* margin: 40px 0 10px; (top, left+right, bottom)*/ 
     margin: 40px 0px 10px 0px;
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 48px;
+    /* лучше будет использовать max-width */
     width: 554px;
 }
 
@@ -33,6 +39,7 @@ h1 {
 
 .divider {
     display: block;
+    /* сократить написание свойства margin */
     margin: 0px 31px 0px 31px;
     height: 25px;
     width: 1px;
@@ -53,6 +60,7 @@ h1 {
     list-style: none;
     padding: 10px 0;
     align-items: center;
+    /* удалить font-family, font-style (normal это дефолтное значение) */
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
@@ -64,6 +72,7 @@ h1 {
 .menu-link {
     position: relative;
     text-decoration: none;
+    /* тут можно просто задать margin-left */
     margin: 0px 0px 0px 20px;
 
 }
@@ -88,6 +97,7 @@ h1 {
     height: 82px;
     padding: 10px 0;
     list-style: none;
+    /* дублированное свойство */
     height: 82px;
     padding: 10px 0;
     align-items: center;
@@ -155,6 +165,7 @@ h1 {
 .bot-post {
     font-size: 28px;
     position: relative;
+    /* можно сократить написание, не нужно писать 0px, просто 0 */
     padding: 0px 50px 0px 50px;
     /* баг с шириной контейнера, родителю задавать  max-width: 100%, потомку min-width: 0; сложно при использовании свойства text-overflow */
     min-width: 0;
@@ -205,6 +216,7 @@ h1 {
 
 /* ///vtoroy block// */
 
+/* удалить пустой селектор */
 .jane-post {}
 
 h2 {
@@ -247,6 +259,7 @@ h2 {
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
+    /* удалить комментарий */
     /* position: relative;
     padding-left: 33.5px; */
 }
@@ -260,6 +273,7 @@ h2 {
     background: #00BCD4;
     margin-right: 16.5px;
     margin-bottom: 1px;
+    /* удалить тут тоже */
     /* position: absolute;
     left: 0;
     top: 50%;
@@ -278,6 +292,7 @@ h2 {
 /* // третий блок// */
 
 .vivamus {
+    /* сократить до margin-top */
     margin: 81px 0 0 0;
     display: flex;
     justify-content: space-between;
@@ -290,6 +305,7 @@ h2 {
 }
 
 .vivamus-title {
+    /* сократить написание свойства */
     margin: 150px 0 0 0;
     font-family: 'Open Sans';
     font-weight: 600;
@@ -298,6 +314,7 @@ h2 {
 }
 
 .vivamus-title::after {
+    /* всегда лучше добавлять пробел между кавычек (старый баг) */
     content: "";
     border-radius: 50%;
     display: inline-block;
@@ -363,10 +380,12 @@ h2 {
     line-height: 65px;
     color: #006064;
     width: 250px;
+    /* сократить свойство */
     margin: 0 0 0 70px;
 }
 
 .follower-bot {
+    /* вот это не нужно */
     clear: both;
     font-family: 'Open Sans';
     font-weight: 600;
@@ -391,12 +410,14 @@ h2 {
     position: relative;
     margin: 0;
     background-color: #f0fbfc;
+    /* сократить */
     padding: 120px 0 0 0;
 }
 
 
 
 .discover-title::after {
+    /* добавить пробел в кавычках */
     content: "";
     position: absolute;
     top: 190px;
@@ -424,6 +445,8 @@ h2 {
 /* //8 блок// */
 
 .whats-updates {
+    /* удалить это и убедиться что картинка это только волна*/
+    /* сократить написание до свойства background: url(...) no-repeat; */
     background-image: url(images/whats-update.png);
     background-repeat: no-repeat;
     background-position: bottom -1000px right 0px;
@@ -431,6 +454,7 @@ h2 {
 }
 
 .whats-post {
+    /* сократить */
     padding: 0 0 80px 0;
     margin: 0 auto;
     width: 701px;
@@ -443,6 +467,7 @@ h2 {
 }
 
 .whats-update::after {
+    /* добавить пробел */
     content: "";
     margin: 0 auto;
     position: relative;
@@ -479,6 +504,7 @@ h2 {
     font-size: 16px;
     line-height: 22px;
     color: rgba(0, 0, 0, 0.54);
+    /* удалить */
     /* margin-bottom: 10px; */
 }
 
@@ -551,6 +577,14 @@ h2 {
 
 }
 
+/* заменить картинку на блок */
+.new-item-image {
+    width: 165px;
+    height: 143px;
+    border-radius:20px;
+    background-color: green;
+    /* добавить стили что бы отцентрировать текст внутри */
+}
 .news-item img {
     position: relative;
     left: -50px;
@@ -560,6 +594,7 @@ h2 {
 
 /* 9 блок */
 
+/* добавить padding снизу */
 .footer {
     background-color: rgb(246 243 251);
     padding-top: 150px;
